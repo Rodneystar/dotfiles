@@ -1,0 +1,3 @@
+makeScratch = require'tools'.makeScratch
+
+

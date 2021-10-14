@@ -1,0 +1,21 @@
+call plug#begin(stdpath('data') . '/plugged')
+	Plug 'tpope/vim-sensible'
+	Plug 'scrooloose/nerdtree'
+	Plug 'https://github.com/adelarsq/neoline.vim'
+	Plug 'ayu-theme/ayu-vim' 
+	Plug 'ryanoasis/vim-devicons'
+call plug#end()
+
+
+" config ayu theme
+set termguicolors     " enable true colors support
+"let ayucolor="light"  " for light version of theme
+let ayucolor="mirage" " for mirage version of theme
+"let ayucolor="dark"   " for dark version of theme
+colorscheme ayu
+
+
+augroup nerdtree_open
+    autocmd!
+    autocmd VimEnter * NERDTree | wincmd p
+augroup END
