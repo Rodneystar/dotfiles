@@ -9,6 +9,8 @@
     ~/.vim: vim
     ~/.vimrc: vimrc
     ~/.config/nvim: nvim
+    ~/.tmux: tmux
+    ~/.tmux.conf: tmux.conf
 
 - create:
     - ~/.vim/undo-history
